@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 3000;
 const authCtrl = require('./src/controllers/auth');
 const usersCtrl = require('./src/controllers/users');
 const booksCtrl = require('./src/controllers/books');
+const purchasesCtrl = require('./src/controllers/purchases');
 
 // MiddleWare
 const verifyToken = require('./src/middleware/verify-token');
@@ -35,6 +36,7 @@ app.use('/auth', authCtrl);
 // Protected Routes
 app.use('/users', verifyToken, usersCtrl);
 app.use('/books', booksCtrl);
+app.use('/purchases', purchasesCtrl);
 
 
 
