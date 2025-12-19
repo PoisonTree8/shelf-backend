@@ -15,6 +15,7 @@ const authCtrl = require('./src/controllers/auth');
 const usersCtrl = require('./src/controllers/users');
 const booksCtrl = require('./src/controllers/books');
 const purchasesCtrl = require('./src/controllers/purchases');
+const ratingsCtrl = require('./src/controllers/ratings');
 
 // MiddleWare
 const verifyToken = require('./src/middleware/verify-token');
@@ -37,6 +38,7 @@ app.use('/auth', authCtrl);
 app.use('/users', verifyToken, usersCtrl);
 app.use('/books', booksCtrl);
 app.use('/purchases', purchasesCtrl);
+app.use('/ratings', ratingsCtrl);
 
 
 
