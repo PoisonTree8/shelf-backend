@@ -43,5 +43,5 @@ app.use('/ratings', ratingsCtrl);
 
 
 app.listen(PORT, () => {
-  console.log('The express app is ready!');
+  console.log(`The express app is ready and listening on port ${PORT}!`);
 });

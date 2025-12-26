@@ -6,7 +6,6 @@ const bookSchema = mongoose.Schema(
     description: { type: String, required: true, trim: true },
     price: { type: Number, required: true, min: 0 },
     authorName: { type: String, required: true, trim: true },
-    category: { type: String, required: true, trim: true },
 
     previewPdfUrl: { type: String, required: true, trim: true },
     fullPdfUrl: { type: String, required: true, trim: true },
